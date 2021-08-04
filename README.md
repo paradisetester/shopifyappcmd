@@ -17,6 +17,7 @@ Create Virtual Host in Nginx :
 5. sudo nano /etc/nginx/sites-available/example.com
 
 Clear file and paste this code in file, replace example.com to your hostname
+
     server {
         listen 80;
         listen [::]:80;
@@ -43,3 +44,11 @@ Clear file and paste this code in file, replace example.com to your hostname
 8. sudo systemctl restart nginx
 
 9. sudo nano /etc/hosts
+
+add your domain:
+#For localhost:
+127.0.0.0.1   <example.com>
+
+#For live:
+<serverIP>   <example.com>
+
